@@ -1,0 +1,37 @@
+# Gradle
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Kotlin
+.kotlin/
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+captures/
+
+# Local config
+local.properties
+
+# macOS
+.DS_Store
+
+# iOS / Xcode
+iosApp/Pods/
+iosApp/build/
+xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Node / KMP web
+node_modules/
+kotlin-js-store/
+
+# Logs
+*.log
