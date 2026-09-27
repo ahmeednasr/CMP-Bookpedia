@@ -4,7 +4,7 @@ data class Book(
     val id: String,
     val title: String,
     val imageUrl: String,
-    val author: String,
+    val authors: List<String>,
     val description: String?,
     val language: List<String>,
     val firstPublishYear: String?,
