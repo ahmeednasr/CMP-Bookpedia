@@ -29,12 +29,9 @@ private fun BookList(
         verticalArrangement = Arrangement.spacedBy(10.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-
         items(
             items = books,
-            key = {
-                it.id
-            }
+            key = { it.id }
         ) { book ->
             BookListItem(
                 book = book, modifier = Modifier
@@ -44,10 +41,6 @@ private fun BookList(
                     onBookClick(book)
                 }
             )
-
         }
-
-
     }
-
 }
