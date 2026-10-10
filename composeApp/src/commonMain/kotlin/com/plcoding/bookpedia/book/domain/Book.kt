@@ -13,3 +13,19 @@ data class Book(
     val numPages: Int?,
     val numEdition: Int?,
 )
+
+val books = (1..100).map {
+    Book(
+        id = it.toString(),
+        title = "Book $it",
+        imageUrl = "https://test.com",
+        authors = listOf("Philipp Lackner"),
+        description = "Description $it",
+        language = emptyList(),
+        firstPublishYear = null,
+        averageRating = 4.5678,
+        ratingsCount = 5,
+        numPages = 100,
+        numEdition = 3
+    )
+}

@@ -52,7 +52,6 @@ fun BookListItem(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-
     Surface(
         shape = RoundedCornerShape(32.dp),
         modifier = modifier
@@ -61,9 +60,11 @@ fun BookListItem(
     ) {
         Row(
             modifier = Modifier
-                .padding(16.dp)
+                .padding(10.dp)
                 .fillMaxWidth()
-                .height(IntrinsicSize.Min)
+                .height(IntrinsicSize.Min),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             Box(
                 modifier = Modifier
@@ -149,7 +150,6 @@ fun BookListItem(
         }
 
     }
-
 }
 
 val dummyBook = Book(

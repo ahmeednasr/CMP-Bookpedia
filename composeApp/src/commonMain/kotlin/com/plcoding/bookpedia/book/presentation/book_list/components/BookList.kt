@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 import com.plcoding.bookpedia.book.domain.Book
 
 @Composable
-private fun BookList(
+fun BookList(
     books: List<Book>,
     onBookClick: (Book) -> Unit,
     modifier: Modifier = Modifier,
@@ -34,10 +34,12 @@ private fun BookList(
             key = { it.id }
         ) { book ->
             BookListItem(
-                book = book, modifier = Modifier
+                book = book,
+                modifier = Modifier
                     .widthIn(max = 700.dp)
                     .fillMaxWidth()
-                    .padding(horizontal = 160.dp), onClick = {
+                    .padding(horizontal = 16.dp),
+                onClick = {
                     onBookClick(book)
                 }
             )
