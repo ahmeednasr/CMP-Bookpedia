@@ -26,5 +26,5 @@ class BookListViewModel : ViewModel(){
             }
         }
     }
-   // 1:48:00 in video
+   // 2:05:00 in video
 }
